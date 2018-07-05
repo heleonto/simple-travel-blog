@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ home_text.head_countries }}</h2>
+       {% for k, v in home_text.countries|dictsort %}
+            <ul>
+               <a href="/{{ lang }}/{{ k }}">{{ v }}</a>
+            </ul>
+        {% endfor %}
+
+{% endblock %}
+

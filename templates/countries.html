@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ cities_info.country_name }}</h2>
+<p>{{ cities_info.little_text }}</p>
+    {% for k, v in cities_info.cities|dictsort %}
+        <ul>
+            <a href="/{{ lang }}/{{ country }}/{{ k }}">{{ v }}</a>
+        </ul>
+    {% endfor %}
+
+<h3><a href="/{{ lang }}">{{ cities_info.back_button }}</a></h3>
+
+{% endblock %}

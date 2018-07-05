@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if country %}
+    <title> Travel Blog - {{ country|capitalize }}</title>
+    {% else %}
+    <title> Travel Blog </title>
+    {% endif %}
+    <link rel="alternate" href="http://levandovski.nl/en" hreflang="en-us" />
+    <link rel="alternate" href="http://levandovski.nl/ru" hreflang="ru-ru" />
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <h1><a style="text-decoration: none; color: #121258;" href="/{{ lang }}">Travel Blog</a></h1>
+</div>
+	<nav>
+        <span style="float: right; padding-right: 10px;">
+            <a style="text-decoration: none;" href="/en">EN </a> | <a style="text-decoration: none;" href="/ru"> RU</a>
+        </span>
+	</nav>
+	<div class="container">
+{% block content %}{% endblock %}
+    </div>
+    <div class="footer">&copy2018 levandovski.nl All rights reserved</div>
+</body>
+</html>

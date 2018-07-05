@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>{{ img_dict.city }}</h2>
+    <p style="color: #f58db6;">
+        {% if img_count >= 20 %} {{ img_dict.alert }} {% endif %}
+        {{ img_dict.count }} <strong style="color: #f58db6;">{{ img_count }} </strong>
+        {{ img_dict.photos }}</p>
+    <p>{% if img_count == 0 %} {{ img_dict.no_photos }} {% endif %}</p>
+    <div>
+        {% for u, d in img_dict.img_pack|dictsort %}
+            <p style="font-size: 0.8em;"><img style="width: 900px; border: 1px solid #d5d5d5" src="{{ u }}">
+            <br>{{ d }}</p>
+        {% endfor %}
+    </div>
+<h3><a href="/{{ lang }}/{{ country }}/{{ city }}">{{ img_dict.back_button }}</a></h3>
+
+{% endblock %}

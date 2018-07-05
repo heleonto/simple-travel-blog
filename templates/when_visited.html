@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ when_info.city_name }}</h2>
+<p>{{ when_info.little_text }}</p>
+    {% for k, v in when_info.when.items() %}
+        <ul>
+            <a href="/{{ lang }}/{{ country }}/{{ city }}/{{ k }}">{{ v }}</a>
+        </ul>
+    {% endfor %}
+<h3><a href="/{{ lang }}/{{ country }}">{{  when_info.back_button }}</a></h3>
+
+
+
+{% endblock %}

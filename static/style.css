@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 2.3em;
+	font-family: 'Amatic SC', cursive;
+	color: #121258;
+}
+
+div, h1 {
+	margin: 0;
+}
+
+h1 {
+	padding-left: 25px;
+	color: #121258;
+}
+
+p {
+    margin:0 0 25px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin:0 0 10px 0;
+}
+
+h3 a {
+    position: relative;
+    bottom: -140px;
+    text-decoration: none;
+	text-align: center;
+	font-size: 0.8em;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container {
+	width: 960;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main {
+	height: 100px;
+	border-bottom: 5px solid #121258;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	border-top: 2px solid #f58db6;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+}
+
+ul a {
+    text-decoration: none;
+	text-transform: uppercase;
+	color: #f58db6;
+	padding: 5px;
+}
+
+ul a:hover {
+    color: #121258;
+}
+
+
+li {
+	display: inline;
+	float: left;
+}
+
+li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f58db6;
+	margin-left: 15px;
+	display: inline-block;
+	padding: 10px;
+}
+
+li a:hover {
+    color: #121258;
+}
+
+.footer {
+	position: relative;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #121258;
+	font-size: 0.7em;
+	text-align: center;
+	margin-top: 150px;
+	border-top: 1px solid #f58db6;
+}
