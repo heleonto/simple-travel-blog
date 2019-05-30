@@ -1,2 +1,2 @@
 # simple-travel-blog
-In action check it out here: http://www.levandovski.nl
+Personal project for organizing places I have been, when and what pics I took there. My commentaries under the pic are stored in .txt file. There is also possibility of choosing language (EN|RU). 
